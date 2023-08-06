@@ -68,6 +68,7 @@ const Skills = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
+                      <p className="p-text">{work.desc}</p>
                     </motion.div>
                     {/* <ReactTooltip
                       id={work.name}
@@ -75,7 +76,7 @@ const Skills = () => {
                       arrowColor="#fff"
                       className="skills-tooltip"
                     >
-                      {work.desc}
+                      {work.c}
                     </ReactTooltip> */}
                   </>
                 ))}
