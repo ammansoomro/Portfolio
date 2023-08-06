@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-// import ReactTooltip from 'react-tooltip';
+import {
+  Tooltip,
+} from 'react-tippy';
+import 'react-tippy/dist/tippy.css'
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
@@ -25,7 +28,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Skills<span>, </span>Education <span>&</span> Experiences</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -68,16 +71,13 @@ const Skills = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
-                      <p className="p-text">{work.desc}</p>
                     </motion.div>
-                    {/* <ReactTooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
+                    <Tooltip
+                      title={work.desc}
+                      position="bottom"
+                      trigger="mouseenter"
                     >
-                      {work.c}
-                    </ReactTooltip> */}
+                    </Tooltip>
                   </>
                 ))}
               </motion.div>

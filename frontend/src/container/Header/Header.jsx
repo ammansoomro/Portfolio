@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Typed from 'typed.js';
 
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
@@ -17,6 +18,20 @@ const scaleVariants = {
 };
 
 const Header = () => (
+  useEffect(() => {
+    const typed = new Typed('#typed-text', {
+      strings: ["FREELANCER", "SOFTWARE ENGINEER", "WEB DEVELOPER"],
+      typeSpeed: 70,
+      backSpeed: 90,
+      loop: true,
+      backDelay: 1000,
+    });
+
+    return () => {
+      typed.destroy(); // Cleanup Typed instance when component unmounts
+    };
+  }, []),
+
   <div className="app__header app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -27,17 +42,20 @@ const Header = () => (
         <div className="badge-cmp app__flex">
           <span>✨</span>
           <div style={{ marginLeft: 20 }}>
+            {/* The target element for the Typed.js animation */}
             <p className="p-text">Hello, I am</p>
             <h1 className="head-text">Amman</h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
+          <p className="p-typejs">
+            <span id="typed-text"></span>
+          </p>
         </div>
       </div>
     </motion.div>
+
 
     <motion.div
       whileInView={{ opacity: [0, 1] }}
@@ -59,7 +77,7 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+      {[images.node, images.react, images.python].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
