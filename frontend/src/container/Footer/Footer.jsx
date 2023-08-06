@@ -37,16 +37,26 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text"><span>Connect</span> with me</h2>
 
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+      <div class="app__footer-cards">
+        <div class="app__footer-card">
+          <img src={images.Resume} alt="mobile" />
+          <a href="/static/media/Amman_Soomro__Resume.80e82111042b80c440a8.pdf" class="p-text" download="">
+            Download Resume
+          </a>
         </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+        <div class="app__footer-card">
+          <img src={images.Gmail} alt="email" />
+          <a href="mailto:amman.soomro.as@gmail.com" class="p-text">
+            Email Me
+          </a>
+        </div>
+        <div class="app__footer-card">
+          <img src={images.Whatsapp} alt="mobile" />
+          <a href="https://api.whatsapp.com/send?phone=%2B923138501180&amp;text&amp;app_absent=0" class="p-text">
+            Text Me
+          </a>
         </div>
       </div>
       {!isFormSubmitted ? (
