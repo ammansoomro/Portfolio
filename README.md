@@ -1,3 +1,3 @@
 # Portfolio
 npm start
-sanity dev run
+sanity dev run 

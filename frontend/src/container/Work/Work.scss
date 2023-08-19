@@ -136,6 +136,11 @@
   position: relative;
   flex-direction: column;
 
+  .p-text{
+    // Make the text justify
+    text-align: justify;
+  }
+
   h4 {
     margin-top: 1rem;
     line-height: 1.5;
