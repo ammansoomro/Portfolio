@@ -3,13 +3,7 @@
   <p align="center">
     A well designed portfolio to showcase your skills and achievements. A beautiful and functional portfolio with smooth animations. Built using React JS, Sanity, Framer-motion.
     <br />
-    <a href="https://amman-portfolio.netlify.app/" target="_blank" rel="noreferrer"><strong>Portfolio Website</strong></a>
-    <br />
     <a href="https://amman-portfolio.netlify.app/" target="_blank" rel="noreferrer">View Demo</a>
-    ·
-    <a href="https://github.com/ammansoomro/Portfolio/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/ammansoomro/Portfolio/issues">Request Feature</a>
   </p>
 </div>
 
