@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <span>A</span>mman <span>S</span>Soomro
+        <span>A</span>mman <span>S</span>oomro
       </div>
     </nav>
   );
