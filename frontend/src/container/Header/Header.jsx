@@ -17,7 +17,7 @@ const scaleVariants = {
   },
 };
 
-const Header = () => (
+const Header = () => {
   useEffect(() => {
     const typed = new Typed("#typed-text", {
       strings: ["SOFTWARE ENGINEER", "FREELANCER", "WEB DEVELOPER"],
@@ -30,8 +30,9 @@ const Header = () => (
     return () => {
       typed.destroy(); // Cleanup Typed instance when component unmounts
     };
-  }, []),
-  (
+  }, []);
+
+  return (
     <div className="app__header app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -83,7 +84,7 @@ const Header = () => (
         ))}
       </motion.div>
     </div>
-  )
-);
+  );
+};
 
 export default AppWrap(Header, "home");
