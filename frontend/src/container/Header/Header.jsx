@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SocialMediaIcon from "../../components/SocialMedia/SocialMedia";
 import { AppWrap } from "../../wrapper";
 import "./Header.scss";
 
 const Header = () => {
   return (
-    <div className="w-5-6 app__header flex flex-center ">
+    <div className=" app__header flex flex-center ">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -16,9 +17,10 @@ const Header = () => {
           Software Engineer <span className="color-primary">|</span> Full Stack
           Developer
         </div>
-        <div className="content color-primary-text neutral-800">
+        <div className="w-5-6 content color-primary-text neutral-800">
           Developing innovative solutions with clean, well-structured code.
         </div>
+        <SocialMediaIcon />
       </motion.div>
     </div>
   );

@@ -12,22 +12,15 @@ a {
 }
 
 :root {
-  --font-base: "DM Sans", sans-serif;
-
-  --primary-color: #edf2f8;
-  --secondary-color: #edb10b;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
 }
 
 :root {
+  --font-base: "DM Sans", sans-serif;
   --base-white: #ffffff;
   --base-white-light: #fafafa;
   --base-black: #000000;
   --base-black-light: #121212;
+  --color-primary: #edb10b;
   --light-color-primary-bg: #ffffff;
   --light-color-base-bg: #edf2f8;
   --light-color-primary-text: #000000;

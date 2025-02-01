@@ -4,13 +4,13 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: var(--light-color-primary);
+      background-color: var(--color-primary);
       color: #fff;
     }
   }
 
   .item-active {
-    background-color: var(--light-color-primary) !important;
+    background-color: var(--color-primary) !important;
     color: #fff !important;
   }
 }
@@ -71,7 +71,7 @@
     svg {
       width: 50%;
       height: 50%;
-      color: var(--white-color);
+      color: var(--base-white);
     }
   }
 }
