@@ -1,21 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import "react-tippy/dist/tippy.css";
-
+import { FaJava, FaReact, FaNode } from "react-icons/fa";
+import { DiMysql, DiHtml5, DiPhp, DiBootstrap, DiCss3 } from "react-icons/di";
+import {
+  SiNextdotjs,
+  SiFirebase,
+  SiJavascript,
+  SiMongodb,
+  SiPython,
+  SiGit,
+  SiExpress,
+  SiTailwindcss,
+  SiSanity,
+} from "react-icons/si";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
 import "./Skills.scss";
 
+// Reusable SkillItem component
+const SkillItem = ({ icon: Icon, skillName }) => (
+  <div className="app__skills-item flex flex-center">
+    <div className="flex flex-center bg-neutral-200">
+      <Icon />
+    </div>
+    <p className="content color-primary-text">{skillName}</p>
+  </div>
+);
+
 const Skills = () => {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
-  }, []);
+  // Skills data array
+  const skills = [
+    { icon: SiNextdotjs, name: "Next.js" },
+    { icon: FaReact, name: "React" },
+    { icon: SiJavascript, name: "JavaScript" },
+    { icon: FaNode, name: "Node" },
+    { icon: SiTailwindcss, name: "Tailwind" },
+    { icon: SiMongodb, name: "MongoDB" },
+    { icon: SiExpress, name: "Express" },
+    { icon: SiFirebase, name: "Firebase" },
+    { icon: FaJava, name: "Java" },
+    { icon: DiMysql, name: "MySQL" },
+    { icon: DiHtml5, name: "HTML" },
+    { icon: DiPhp, name: "PHP" },
+    { icon: DiBootstrap, name: "Bootstrap" },
+    { icon: DiCss3, name: "CSS" },
+    { icon: SiPython, name: "Python" },
+    { icon: SiGit, name: "Git" },
+    { icon: SiSanity, name: "Sanity" },
+  ];
 
   return (
     <>
@@ -23,18 +55,10 @@ const Skills = () => {
         What I Bring to the <span className="color-primary">Table</span>
       </h2>
 
-      <div className="app__skills-container ">
+      <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skill) => (
-            <div
-              className="app__skills-item  flex flex-center"
-              key={skill.name}
-            >
-              <div className="flex flex-center bg-neutral-200">
-                <img src={urlFor(skill.icon)} alt={skill.name} />
-              </div>
-              <p className="content color-primary-text">{skill.name}</p>
-            </div>
+          {skills.map((skill, index) => (
+            <SkillItem key={index} icon={skill.icon} skillName={skill.name} />
           ))}
         </motion.div>
       </div>

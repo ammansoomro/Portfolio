@@ -121,7 +121,9 @@ const Work = () => {
                 </p>
               </div>
               <div className="app__work-tag content-bold border-radius-m px-base py-sm bg-neutral-200 flex flex-center">
-                <p className="content color-primary-text">{work.tags[0]}</p>
+                <p className="content-bold color-primary-text">
+                  {work.tags[0]}
+                </p>
               </div>
             </div>
           </div>

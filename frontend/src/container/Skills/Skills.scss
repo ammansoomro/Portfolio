@@ -20,6 +20,10 @@
 }
 
 .app__skills-item {
+  svg {
+    width: 50%;
+    height: 50%;
+  }
   flex-direction: column;
   text-align: center;
 
@@ -65,5 +69,17 @@
     p {
       margin-top: 1rem;
     }
+  }
+}
+
+.dark-theme .app__skills-item {
+  svg {
+    color: white;
+  }
+}
+
+.light-theme .app__skills-item {
+  svg {
+    color: rgb(57, 57, 57);
   }
 }
