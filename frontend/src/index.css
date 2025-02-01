@@ -1116,7 +1116,7 @@ a {
 }
 
 .dark-theme .bg-color-primary-bg {
-  background-color: #151515;
+  background-color: #141414;
 }
 
 .dark-theme .br-color-primary-bg {
@@ -1132,7 +1132,7 @@ a {
 }
 
 .dark-theme .bg-color-base-bg {
-  background-color: #000000;
+  background-color: #121212;
 }
 
 .dark-theme .br-color-base-bg {
@@ -3041,12 +3041,7 @@ a {
 }
 
 .heading-2 {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.heading-3 {
-  font-size: 1.125rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 

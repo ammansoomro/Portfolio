@@ -4,9 +4,9 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo">
-        A<span>.</span>
+    <nav className="app__navbar w-full flex flex-align-center flex-justify-between">
+      <div className="heading-2 color-primary-text">
+        A<span className="color-primary">.</span>
       </div>
       <ThemeToggle />
     </nav>

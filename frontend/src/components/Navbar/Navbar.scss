@@ -1,38 +1,16 @@
 .app__navbar {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
 }
 
-.app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  letter-spacing: 5px;
-  font-weight: 800;
-  font-size: 1.7rem;
-  span {
-    color: var(--secondary-color);
-    font-size: 2rem;
-  }
-  img {
-    width: 90px;
-    height: 20px;
+.light-theme .app__navbar {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
-  }
+.dark-theme .app__navbar {
+  background: rgba(138, 138, 138, 0.043);
+  border-bottom: 1px solid rgba(138, 138, 138, 0.13);
 }
