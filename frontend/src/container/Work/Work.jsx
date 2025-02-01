@@ -64,10 +64,13 @@ const Work = () => {
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__work-portfolio"
+        className="app__work-portfolio flex flex-wrap flex-center gap-xl"
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex bg-neutral-100" key={index}>
+          <div
+            className="app__work-item flex flex-col border-radius-m p-base bg-neutral-100"
+            key={index}
+          >
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
@@ -108,9 +111,9 @@ const Work = () => {
               </motion.div>
             </div>
 
-            <div className="app__work-content app__flex">
+            <div className="app__work-content full-width flex flex-col flex-center p-sm">
               <div className="flex flex-col gap-s">
-                <h4 className="feature-bold color-primary-text text-center">
+                <h4 className="feature-bold color-primary-text text-center mt-base">
                   {work.title}
                 </h4>
                 <p className="content color-primary-text ">
