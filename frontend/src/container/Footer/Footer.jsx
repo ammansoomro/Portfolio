@@ -7,7 +7,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="flex flex-center flex-col gap-xl">
-      <h2 className="head-text color-primary-text">
+      <h2 className="heading-1 color-primary-text">
         <span className="color-primary">Connect</span> with me
       </h2>
 

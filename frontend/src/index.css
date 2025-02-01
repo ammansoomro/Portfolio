@@ -29,7 +29,7 @@ a {
   --base-black: #000000;
   --base-black-light: #121212;
   --light-color-primary-bg: #ffffff;
-  --light-color-base-bg: #f1f1f1;
+  --light-color-base-bg: #edf2f8;
   --light-color-primary-text: #000000;
   --light-color-primary-text-light: #262626;
   --light-color-primary: #edb10b;
@@ -52,8 +52,8 @@ a {
   --light-secondary-600: #ffdf24;
   --light-secondary-700: #d9b900;
   --light-secondary-800: #b39900;
-  --light-neutral-100: #f2f2f2;
-  --light-neutral-200: #e0e0e0;
+  --light-neutral-100: #fbfbfb;
+  --light-neutral-200: #fefefe;
   --light-neutral-300: #bbbbbb;
   --light-neutral-400: #bdbdbd;
   --light-neutral-500: #919191;
@@ -114,8 +114,8 @@ a {
   --dark-secondary-600: #cc8800;
   --dark-secondary-700: #b77300;
   --dark-secondary-800: #9e5f00;
-  --dark-neutral-100: #303030;
-  --dark-neutral-200: #404040;
+  --dark-neutral-100: #1a1919;
+  --dark-neutral-200: #212121;
   --dark-neutral-300: #555555;
   --dark-neutral-400: #666666;
   --dark-neutral-500: #777777;
@@ -266,19 +266,19 @@ a {
 }
 
 .light-theme .color-base-bg {
-  color: #f1f1f1;
+  color: #edf2f8;
 }
 
 .light-theme .bg-color-base-bg {
-  background-color: #f1f1f1;
+  background-color: #edf2f8;
 }
 
 .light-theme .br-color-base-bg {
-  border-color: #f1f1f1;
+  border-color: #edf2f8;
 }
 
 .light-theme .ot-color-base-bg {
-  outline-color: #f1f1f1;
+  outline-color: #edf2f8;
 }
 
 .light-theme .color-primary-text {
@@ -634,35 +634,35 @@ a {
 }
 
 .light-theme .neutral-100 {
-  color: #f2f2f2;
+  color: #fbfbfb;
 }
 
 .light-theme .bg-neutral-100 {
-  background-color: #f2f2f2;
+  background-color: #fbfbfb;
 }
 
 .light-theme .br-neutral-100 {
-  border-color: #f2f2f2;
+  border-color: #fbfbfb;
 }
 
 .light-theme .ot-neutral-100 {
-  outline-color: #f2f2f2;
+  outline-color: #fbfbfb;
 }
 
 .light-theme .neutral-200 {
-  color: #e0e0e0;
+  color: #fefefe;
 }
 
 .light-theme .bg-neutral-200 {
-  background-color: #e0e0e0;
+  background-color: #fefefe;
 }
 
 .light-theme .br-neutral-200 {
-  border-color: #e0e0e0;
+  border-color: #fefefe;
 }
 
 .light-theme .ot-neutral-200 {
-  outline-color: #e0e0e0;
+  outline-color: #fefefe;
 }
 
 .light-theme .neutral-300 {
@@ -1496,35 +1496,35 @@ a {
 }
 
 .dark-theme .neutral-100 {
-  color: #303030;
+  color: #1a1919;
 }
 
 .dark-theme .bg-neutral-100 {
-  background-color: #303030;
+  background-color: #1a1919;
 }
 
 .dark-theme .br-neutral-100 {
-  border-color: #303030;
+  border-color: #1a1919;
 }
 
 .dark-theme .ot-neutral-100 {
-  outline-color: #303030;
+  outline-color: #1a1919;
 }
 
 .dark-theme .neutral-200 {
-  color: #404040;
+  color: #212121;
 }
 
 .dark-theme .bg-neutral-200 {
-  background-color: #404040;
+  background-color: #212121;
 }
 
 .dark-theme .br-neutral-200 {
-  border-color: #404040;
+  border-color: #212121;
 }
 
 .dark-theme .ot-neutral-200 {
-  outline-color: #404040;
+  outline-color: #212121;
 }
 
 .dark-theme .neutral-300 {
@@ -3033,17 +3033,19 @@ a {
   box-shadow: 0px 4px 12px 0px #0000001f;
 }
 
-.mzn-heading-1 {
-  font-size: 1.375rem;
+.heading-1 {
+  font-size: 2.75rem;
   font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.mzn-heading-2 {
+.heading-2 {
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.mzn-heading-3 {
+.heading-3 {
   font-size: 1.125rem;
   font-weight: 700;
 }
