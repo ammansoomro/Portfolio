@@ -5,7 +5,7 @@ import "./Header.scss";
 
 const Header = () => {
   return (
-    <div className="w-4-5 app__header flex flex-center w-full">
+    <div className="w-5-6 app__header flex flex-center ">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
