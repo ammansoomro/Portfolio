@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Tooltip } from "react-tippy";
 import "react-tippy/dist/tippy.css";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
