@@ -1,15 +1,19 @@
 import React from "react";
-
+import { ThemeProvider } from "./context/ThemeContext";
 import { About, Footer, Header, Skills, Work } from "./container";
+import { Navbar } from "./components";
 import "./App.scss";
 
 const App = () => (
   <div className="app">
-    <Header />
-    <About />
-    <Skills />
-    <Work />
-    <Footer />
+    <ThemeProvider>
+      <Navbar />
+      <Header />
+      <About />
+      <Skills />
+      <Work />
+      <Footer />
+    </ThemeProvider>
   </div>
 );
 
