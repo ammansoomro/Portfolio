@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+
 import Typed from "typed.js";
 
 import { AppWrap } from "../../wrapper";

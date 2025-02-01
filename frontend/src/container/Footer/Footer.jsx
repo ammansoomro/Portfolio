@@ -38,6 +38,9 @@ const Footer = () => {
           </div>
         </a>
       </div>
+      <div className="footer-text">
+        Copyright © {new Date().getFullYear()} | Crafted with 💛 by Amman Soomro
+      </div>
     </>
   );
 };

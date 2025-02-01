@@ -8,7 +8,7 @@
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -63,20 +63,17 @@ a{
   }
 }
 
-
-.red{
-  background-color: #F2D3D4 !important;
+.red {
+  background-color: #f2d3d4 !important;
 }
 
-.green{
-  background-color: #D3F2D2 !important;
+.green {
+  background-color: #d3f2d2 !important;
 }
 
-.yellow{
-  background-color: #F1EED3 !important;
-
+.yellow {
+  background-color: #f1eed3 !important;
 }
-
 
 .app__footer-cards .app__footer-card:hover {
   box-shadow: 0 0 25px #cbcbcb;
@@ -143,4 +140,9 @@ a{
     width: 100%;
     margin: 1rem 0;
   }
+}
+
+.footer-text {
+  font-size: 12px;
+  font-weight: 400;
 }
