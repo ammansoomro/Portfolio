@@ -71,7 +71,7 @@ const Work = () => {
             className="app__work-item flex flex-col border-radius-m p-base bg-neutral-100"
             key={index}
           >
-            <div className="app__work-img app__flex">
+            <div className="app__work-img flex flex-center">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
               <motion.div
@@ -81,7 +81,7 @@ const Work = () => {
                   ease: "easeInOut",
                   staggerChildren: 0.5,
                 }}
-                className="app__work-hover app__flex"
+                className="app__work-hover flex flex-center"
               >
                 {work.projectLink && (
                   <a href={work.projectLink} target="_blank" rel="noreferrer">
@@ -89,7 +89,7 @@ const Work = () => {
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.9] }}
                       transition={{ duration: 0.25 }}
-                      className="app__flex"
+                      className="flex flex-center"
                     >
                       <AiFillEye />
                     </motion.div>
@@ -102,7 +102,7 @@ const Work = () => {
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.9] }}
                       transition={{ duration: 0.25 }}
-                      className="app__flex"
+                      className="flex flex-center"
                     >
                       <AiFillGithub />
                     </motion.div>
@@ -120,7 +120,7 @@ const Work = () => {
                   {work.description}
                 </p>
               </div>
-              <div className="app__work-tag content-bold border-radius-m px-base py-sm bg-neutral-200 app__flex">
+              <div className="app__work-tag content-bold border-radius-m px-base py-sm bg-neutral-200 flex flex-center">
                 <p className="content color-primary-text">{work.tags[0]}</p>
               </div>
             </div>

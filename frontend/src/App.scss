@@ -10,17 +10,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-.app__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .app__wrapper {
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 4rem;
 }
 
 ::-webkit-scrollbar {
@@ -36,6 +30,6 @@
 
 @media screen and (max-width: 500px) {
   .app__wrapper {
-    padding: 0rem;
+    padding: 4rem 2rem;
   }
 }
