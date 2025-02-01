@@ -1,80 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import Typed from "typed.js";
 import { AppWrap } from "../../wrapper";
-import { images } from "../../constants";
 import "./Header.scss";
 
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-};
-
 const Header = () => {
-  useEffect(() => {
-    const typed = new Typed("#typed-text", {
-      strings: ["SOFTWARE ENGINEER", "FREELANCER", "WEB DEVELOPER"],
-      typeSpeed: 70,
-      backSpeed: 90,
-      loop: true,
-      backDelay: 1000,
-    });
-
-    return () => {
-      typed.destroy(); // Cleanup Typed instance when component unmounts
-    };
-  }, []);
-
   return (
-    <div className="app__header app__flex">
+    <div className="app__header flex flex-center w-full">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
-        className="app__header-info"
+        className="app__header-info text-center flex-center"
       >
-        <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <span>✨</span>
-            <div style={{ marginLeft: 20 }}>
-              {/* The target element for the Typed.js animation */}
-              <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Amman</h1>
-            </div>
-          </div>
-
-          <div className="tag-cmp app__flex">
-            <p className="p-typejs">
-              <span id="typed-text"></span>
-            </p>
-          </div>
+        <div className="heading-3 color-primary-text">Amman Soomro</div>
+        <div className="feature-bold color-primary-text">
+          Software Engineer <span className="color-primary">|</span> Full Stack
+          Developer
         </div>
-      </motion.div>
-
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
-        <img src={images.profile} alt="profile_bg" />
-
-      </motion.div>
-
-      <motion.div
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
-      >
-        {[images.node, images.react, images.python].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="profile_bg" />
-          </div>
-        ))}
       </motion.div>
     </div>
   );

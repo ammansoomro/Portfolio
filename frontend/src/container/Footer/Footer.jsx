@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
-      <div className="content color-primary-text">
+      <div className="content color-primary-text text-center">
         Copyright © {new Date().getFullYear()} | Crafted with 💛 by Amman Soomro
       </div>
     </div>

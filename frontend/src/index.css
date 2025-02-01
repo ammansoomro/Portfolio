@@ -3045,6 +3045,11 @@ a {
   font-weight: 700;
 }
 
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .feature,
 .feature-bold,
 .feature-accent,
