@@ -28,7 +28,7 @@
   --light-color-base-bg: #f1f1f1;
   --light-color-primary-text: #000000;
   --light-color-primary-text-light: #262626;
-  --light-color-primary: #701e7d;
+  --light-color-primary: #edb10b;
   --light-color-secondary: #ffda00;
   --light-color-success: #27ae60;
   --light-color-warning: #eb5757;
@@ -90,7 +90,7 @@
   --dark-color-base-bg: #000000;
   --dark-color-primary-text: #ffffff;
   --dark-color-primary-text-light: #b3b3b3;
-  --dark-color-primary: #701e7d;
+  --dark-color-primary: #edb10b;
   --dark-color-secondary: #ffda00;
   --dark-color-success: #27ae60;
   --dark-color-warning: #eb5757;
@@ -310,19 +310,19 @@
 }
 
 .light-theme .color-primary {
-  color: #701e7d;
+  color: #edb10b;
 }
 
 .light-theme .bg-color-primary {
-  background-color: #701e7d;
+  background-color: #edb10b;
 }
 
 .light-theme .br-color-primary {
-  border-color: #701e7d;
+  border-color: #edb10b;
 }
 
 .light-theme .ot-color-primary {
-  outline-color: #701e7d;
+  outline-color: #edb10b;
 }
 
 .light-theme .color-secondary {
@@ -1112,7 +1112,7 @@
 }
 
 .dark-theme .bg-color-primary-bg {
-  background-color: #272727;
+  background-color: #151515;
 }
 
 .dark-theme .br-color-primary-bg {
@@ -1172,19 +1172,19 @@
 }
 
 .dark-theme .color-primary {
-  color: #701e7d;
+  color: #edb10b;
 }
 
 .dark-theme .bg-color-primary {
-  background-color: #701e7d;
+  background-color: #edb10b;
 }
 
 .dark-theme .br-color-primary {
-  border-color: #701e7d;
+  border-color: #edb10b;
 }
 
 .dark-theme .ot-color-primary {
-  outline-color: #701e7d;
+  outline-color: #edb10b;
 }
 
 .dark-theme .color-secondary {

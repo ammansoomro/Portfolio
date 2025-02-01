@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   useEffect(() => {
     document.body.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
-
+  
   const handleToggle = () => {
     toggleTheme();
   };
