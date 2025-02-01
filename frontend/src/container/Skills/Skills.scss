@@ -16,20 +16,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 1.25rem;
 }
 
 .app__skills-item {
   flex-direction: column;
   text-align: center;
 
-  margin: 1rem;
-
   transition: all 0.3s ease-in-out;
 
   div {
     width: 90px;
     height: 90px;
-    border-radius: 50%;
+    border-radius: 8px;
     background-color: #fef4f5;
 
     img {
@@ -40,7 +39,8 @@
     }
 
     &:hover {
-      box-shadow: 0 0 20px #dbdbdb;
+      cursor: pointer;
+      box-shadow: 0 4px 10px #edb10b3c;
     }
 
     @media screen and (min-width: 2000px) {
