@@ -26,8 +26,9 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        Skills<span>, </span>Education <span>&</span> Experiences
+      <h2 className="heading-1 color-primary-text">
+        Skills<span className="color-primary">, </span>Education{" "}
+        <span className="color-primary">&</span> Experiences
       </h2>
 
       <div className="app__skills-container ">
@@ -36,16 +37,13 @@ const Skills = () => {
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
+              className="app__skills-item  app__flex"
               key={skill.name}
             >
-              <div
-                className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
+              <div className="flex flex-center bg-neutral-200">
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p className="content color-primary-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -88,5 +86,5 @@ const Skills = () => {
 export default AppWrap(
   MotionWrap(Skills, "flex full-width flex-col"),
   "skills",
-  "app__whitebg"
+  "bg-color-primary-bg"
 );
