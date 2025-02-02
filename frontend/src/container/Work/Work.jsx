@@ -3,7 +3,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import works from "./worksData";
+import works from "../../data/worksData";
 import "./Work.scss";
 
 const Work = () => {
