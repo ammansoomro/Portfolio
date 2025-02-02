@@ -34,9 +34,12 @@ const About = () => {
         <span>Hi, I'm Amman,</span>
         <span>
           A Software Engineer with{" "}
-          <span className="color-primary-text highlight-accent text-underline">
+          <a
+            href="#experience"
+            className="color-primary-text highlight-accent text-underline"
+          >
             {experience} years of experience
-          </span>{" "}
+          </a>
           in full-stack development. I enjoy building high-performance
           applications that make an impact.
         </span>
