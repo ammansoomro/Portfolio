@@ -8,7 +8,9 @@
 
 .shape {
   position: absolute;
-  animation: rotateShape 12s linear infinite; /* Smooth continuous rotation */
+  animation: rotateShape 12s linear infinite;
+  height: 10%;
+  width: 20%;
 }
 
 /* Define the rotation animation */
