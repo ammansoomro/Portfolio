@@ -2,22 +2,13 @@ import images from "../../constants/images";
 
 const works = [
   {
-    codeLink: "https://github.com/ammansoomro/ShadowSensei",
+    codeLink: "https://github.com/ammansoomro/prompt-o-phobia",
     description:
-      "A web-based, Student Management System built using HTML, CSS, PHP, and JavaScript that would store all the data about the students and their courses on a PHP MySQL server.",
-    imgUrl: images.shadowsensei,
-    projectLink:
-      "https://k191048localweb.000webhostapp.com/NinjaDBMS/index.php",
-    tags: ["Php"],
-    title: "Shadow Sensei",
-  },
-  {
-    codeLink: "https://github.com/ammansoomro/GradeCalc",
-    description:
-      "A web app developed with HTML, CSS, and JavaScript. Effortlessly compute semester and cumulative GPAs by inputting course grades. Empowering users to track their academic progress with ease.",
-    imgUrl: images.gradecalc,
-    tags: ["HTML"],
-    title: "Grade Calc",
+      "Empower your creativity using Next.js. Shape unique prompts for advanced AI interaction, revolutionizing AI-driven experiences. Your innovation knows no bounds with this platform. Share and redefine possibilities today!",
+    imgUrl: images.promptophobia,
+    projectLink: "https://prompt-o-phobia.vercel.app/",
+    tags: ["Next"],
+    title: "Prompt-O-Phobia",
   },
   {
     codeLink: "https://github.com/ammansoomro/Moviebase",
@@ -36,6 +27,42 @@ const works = [
     tags: ["Native", "React"],
     title: "Sports Hub",
   },
+  {
+    codeLink: "https://github.com/ammansoomro/SMD_Project",
+    description:
+      "React Native app featuring user authentication, displaying a variety of PlayStation accessories and games. Users can browse, add items to a mock shopping cart, and simulate a purchase experience.",
+    imgUrl: images.gamewareshub,
+    tags: ["Native", "React"],
+    title: "GameWares Hub",
+  },
+  {
+    codeLink: "https://github.com/ammansoomro/ShadowSensei",
+    description:
+      "A web-based, Student Management System built using HTML, CSS, PHP, and JavaScript that would store all the data about the students and their courses on a PHP MySQL server.",
+    imgUrl: images.shadowsensei,
+    projectLink:
+      "https://k191048localweb.000webhostapp.com/NinjaDBMS/index.php",
+    tags: ["Php"],
+    title: "Shadow Sensei",
+  },
+  {
+    codeLink: "https://github.com/ammansoomro/LavenderLogs",
+    description:
+      "A web-based, Blog Post Management System developed using Php, HTML, and JS including MySQL Database as a backend to store all the data. The consists of different dashboards based on user-role.",
+    imgUrl: images.lavenderlogs,
+    projectLink: "http://darktestsite007.000webhostapp.com/",
+    tags: ["Php"],
+    title: "Lavender Logs",
+  },
+  {
+    codeLink: "https://github.com/ammansoomro/GradeCalc",
+    description:
+      "A web app developed with HTML, CSS, and JavaScript. Effortlessly compute semester and cumulative GPAs by inputting course grades. Empowering users to track their academic progress with ease.",
+    imgUrl: images.gradecalc,
+    tags: ["HTML"],
+    title: "Grade Calc",
+  },
+
   {
     codeLink: "https://github.com/ammansoomro/WordSearchWizard",
     description:
@@ -60,32 +87,6 @@ const works = [
     imgUrl: images.scrollsnap,
     tags: ["HTML"],
     title: "Scroll Snap",
-  },
-  {
-    codeLink: "https://github.com/ammansoomro/LavenderLogs",
-    description:
-      "A web-based, Blog Post Management System developed using Php, HTML, and JS including MySQL Database as a backend to store all the data. The consists of different dashboards based on user-role.",
-    imgUrl: images.lavenderlogs,
-    projectLink: "http://darktestsite007.000webhostapp.com/",
-    tags: ["Php"],
-    title: "Lavender Logs",
-  },
-  {
-    codeLink: "https://github.com/ammansoomro/SMD_Project",
-    description:
-      "React Native app featuring user authentication, displaying a variety of PlayStation accessories and games. Users can browse, add items to a mock shopping cart, and simulate a purchase experience.",
-    imgUrl: images.gamewareshub,
-    tags: ["Native", "React"],
-    title: "GameWares Hub",
-  },
-  {
-    codeLink: "https://github.com/ammansoomro/prompt-o-phobia",
-    description:
-      "Empower your creativity using Next.js. Shape unique prompts for advanced AI interaction, revolutionizing AI-driven experiences. Your innovation knows no bounds with this platform. Share and redefine possibilities today!",
-    imgUrl: images.promptophobia,
-    projectLink: "https://prompt-o-phobia.vercel.app/",
-    tags: ["Next"],
-    title: "Prompt-O-Phobia",
   },
 ];
 
