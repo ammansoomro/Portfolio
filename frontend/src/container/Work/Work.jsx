@@ -44,7 +44,7 @@ const Work = () => {
   return (
     <div className="flex flex-col gap-xl">
       <h2 className="heading-1 color-primary-text">
-        <span> Personal</span> <span className="color-primary">Projects</span>{" "}
+        <span> Side</span> <span className="color-primary">Quests</span>{" "}
       </h2>
 
       <div className="app__work-filter flex flex-wrap flex-center gap-m">
