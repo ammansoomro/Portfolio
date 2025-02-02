@@ -1,0 +1,112 @@
+.shapes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.shape {
+  position: absolute;
+  animation: rotateShape 12s linear infinite; /* Smooth continuous rotation */
+}
+
+/* Define the rotation animation */
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Variations in animation duration for different shapes */
+.s1 {
+  animation-duration: 15s;
+}
+.s2 {
+  animation-duration: 18s;
+}
+.s3 {
+  animation-duration: 12s;
+}
+.s4 {
+  animation-duration: 14s;
+}
+.s5 {
+  animation-duration: 16s;
+}
+.s6 {
+  animation-duration: 17s;
+}
+.s7 {
+  animation-duration: 13s;
+}
+.s8 {
+  animation-duration: 19s;
+}
+.s9 {
+  animation-duration: 11s;
+}
+.s10 {
+  animation-duration: 20s;
+}
+.s11 {
+  animation-duration: 14s;
+}
+
+.s1 {
+  left: 2%;
+  top: 10%;
+}
+
+.s2 {
+  left: 18%;
+  top: 30%;
+}
+
+.s3 {
+  left: 5%;
+  bottom: 30%;
+}
+
+.s4 {
+  left: 2%;
+  bottom: 10%;
+}
+
+.s5 {
+  left: 44%;
+  top: 10%;
+}
+
+.s6 {
+  left: 36%;
+  bottom: 10%;
+}
+
+.s7 {
+  top: 20%;
+  right: 25%;
+}
+
+.s8 {
+  right: 24%;
+  bottom: 20%;
+}
+
+.s9 {
+  right: 2%;
+  top: 10%;
+}
+
+.s10 {
+  right: 11%;
+  top: 56%;
+}
+
+.s11 {
+  right: 2%;
+  bottom: 10%;
+}
