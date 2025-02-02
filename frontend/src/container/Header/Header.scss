@@ -4,16 +4,46 @@
   top: 0;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .shape {
   position: absolute;
-  animation: rotateShape 12s linear infinite;
+  animation: floatRandom 10s ease-in-out infinite alternate,
+    rotateShape 20s linear infinite;
   height: 10%;
   width: 20%;
 }
 
-/* Define the rotation animation */
+/* Keyframes for True Random Floating Motion */
+@keyframes floatRandom {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-20px, 30px);
+  }
+  25% {
+    transform: translate(50px, -40px);
+  }
+  40% {
+    transform: translate(-30px, -10px);
+  }
+  55% {
+    transform: translate(40px, 30px);
+  }
+  70% {
+    transform: translate(-50px, 20px);
+  }
+  85% {
+    transform: translate(30px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Soft Rotation */
 @keyframes rotateShape {
   0% {
     transform: rotate(0deg);
@@ -23,91 +53,93 @@
   }
 }
 
-/* Variations in animation duration for different shapes */
+/* Different random durations & delays for each shape */
 .s1 {
-  animation-duration: 15s;
+  animation: floatRandom 13s ease-in-out infinite alternate,
+    rotateShape 22s linear infinite;
 }
 .s2 {
-  animation-duration: 18s;
+  animation: floatRandom 15s ease-in-out infinite alternate,
+    rotateShape 26s linear infinite;
 }
 .s3 {
-  animation-duration: 12s;
+  animation: floatRandom 11s ease-in-out infinite alternate,
+    rotateShape 18s linear infinite;
 }
 .s4 {
-  animation-duration: 14s;
+  animation: floatRandom 14s ease-in-out infinite alternate,
+    rotateShape 21s linear infinite;
 }
 .s5 {
-  animation-duration: 16s;
+  animation: floatRandom 12s ease-in-out infinite alternate,
+    rotateShape 19s linear infinite;
 }
 .s6 {
-  animation-duration: 17s;
+  animation: floatRandom 16s ease-in-out infinite alternate,
+    rotateShape 24s linear infinite;
 }
 .s7 {
-  animation-duration: 13s;
+  animation: floatRandom 17s ease-in-out infinite alternate,
+    rotateShape 23s linear infinite;
 }
 .s8 {
-  animation-duration: 19s;
+  animation: floatRandom 13s ease-in-out infinite alternate,
+    rotateShape 20s linear infinite;
 }
 .s9 {
-  animation-duration: 11s;
+  animation: floatRandom 18s ease-in-out infinite alternate,
+    rotateShape 28s linear infinite;
 }
 .s10 {
-  animation-duration: 20s;
+  animation: floatRandom 20s ease-in-out infinite alternate,
+    rotateShape 30s linear infinite;
 }
 .s11 {
-  animation-duration: 14s;
+  animation: floatRandom 14s ease-in-out infinite alternate,
+    rotateShape 22s linear infinite;
 }
 
+/* Initial Positions */
 .s1 {
   left: 2%;
   top: 10%;
 }
-
 .s2 {
   left: 18%;
   top: 30%;
 }
-
 .s3 {
   left: 5%;
   bottom: 30%;
 }
-
 .s4 {
   left: 2%;
   bottom: 10%;
 }
-
 .s5 {
   left: 44%;
   top: 10%;
 }
-
 .s6 {
   left: 36%;
   bottom: 10%;
 }
-
 .s7 {
   top: 20%;
   right: 25%;
 }
-
 .s8 {
   right: 24%;
   bottom: 20%;
 }
-
 .s9 {
   right: 2%;
   top: 10%;
 }
-
 .s10 {
   right: 11%;
   top: 56%;
 }
-
 .s11 {
   right: 2%;
   bottom: 10%;
