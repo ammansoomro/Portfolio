@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
 
 const About = () => {
+  const { theme } = useContext(ThemeContext);
+  const isDarkMode = theme === "dark";
+
   const [experience, setExperience] = useState("1.6");
 
   useEffect(() => {
@@ -73,9 +77,9 @@ const About = () => {
         <span>@ammansoomro</span>
         <div className="full-width flex flex-justify-end mr-xxl">
           <img
-            src={images.sign_light}
+            src={isDarkMode ? images.sign_light : images.sign_dark}
             className="w-1-5"
-            alt="Signature Image"
+            alt="Signature"
           />
         </div>
       </div>
