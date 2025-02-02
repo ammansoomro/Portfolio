@@ -1,0 +1,26 @@
+.timeline {
+  max-width: 600px;
+  width: 100%;
+
+  svg {
+    color: #fdba00;
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 0.9em;
+  line-height: 1.5rem;
+  padding-left: 20px;
+  border-left: 2px solid #cbcbcb7b;
+  margin-left: 5px;
+  padding-top: 5px;
+}

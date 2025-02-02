@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "./context/ThemeContext";
-import { About, Footer, Header, Skills, Work } from "./container";
+import { About, Footer, Header, Skills, Work, Experience } from "./container";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import "./App.scss";
 
@@ -11,6 +11,7 @@ const App = () => (
       <Header />
       <About />
       <Skills />
+      <Experience />
       <Work />
       <Footer />
     </ThemeProvider>
