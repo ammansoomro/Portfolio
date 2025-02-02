@@ -39,7 +39,7 @@ const About = () => {
             className="color-primary-text highlight-accent text-underline"
           >
             {experience} years of experience
-          </a>
+          </a>{" "}
           in full-stack development. I enjoy building high-performance
           applications that make an impact.
         </span>
