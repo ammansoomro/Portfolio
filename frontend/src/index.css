@@ -3182,3 +3182,9 @@ a {
 .text-line-through {
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 500px) {
+  .heading-1 {
+    font-size: 1.75rem;
+  }
+}

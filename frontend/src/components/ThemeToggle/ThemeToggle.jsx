@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import "./ThemeToggle.scss";
 
 const ThemeToggle = () => {
@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   useEffect(() => {
     document.body.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
-  
+
   const handleToggle = () => {
     toggleTheme();
   };

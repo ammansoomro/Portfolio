@@ -17,6 +17,8 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import sign_light from "../assets/signature_light.png";
+import sign_dark from "../assets/signature_dark.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -75,6 +77,8 @@ const images = {
   Resume,
   Gmail,
   Whatsapp,
+  sign_light,
+  sign_dark,
 };
 
 export default images;
