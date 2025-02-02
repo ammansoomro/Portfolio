@@ -3,11 +3,14 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { GiDiamonds } from "react-icons/gi";
 import "./Experience.scss";
 
-const TimelineEntry = ({ companyName, descriptions }) => (
+const TimelineEntry = ({ companyName, descriptions, tenure }) => (
   <div className="entry">
-    <div className="flex flex-align-center mb-base">
-      <div className="dot bg-color-primary"></div>
-      <div className="feature-accent color-primary-text">{companyName}</div>
+    <div className="flex mb-base">
+      <div className="dot mt-s bg-color-primary"></div>
+      <div className="flex flex-col gap-s">
+        <div className="feature-accent color-primary-text">{companyName}</div>
+        <div className="content neutral-700">{tenure}</div>
+      </div>
     </div>
     <div className="description flex flex-col gap-sm">
       {descriptions.map((desc, index) => (
@@ -28,6 +31,7 @@ const Experience = () => {
   const experiences = [
     {
       companyName: "Software Engineer x Techlogix ",
+      tenure: "Jun, 2023 - Present",
       descriptions: [
         "Built and enhanced a large-scale digital banking application, utilizing ReactJS, KnockoutJS, JavaScript, Java, Jenkins, and Oracle SQL to deliver a seamless experience for over 2 million users.",
         "Played a key role in developing critical modules such as Fund Transfer, Bill Payments, Mobile Top-ups, AMIM, RAAST, and Payoneer, contributing to revenue growth in the thousands for the company.",
@@ -52,7 +56,7 @@ const Experience = () => {
             key={index}
             companyName={entry.companyName}
             descriptions={entry.descriptions}
-            isPrimary={entry.isPrimary}
+            tenure={entry.tenure}
           />
         ))}
       </div>
