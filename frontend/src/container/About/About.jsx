@@ -51,6 +51,7 @@ const About = () => {
           <a
             href="https://www.techlogix.com/"
             target="_blank"
+            rel="noopener noreferrer"
             className="color-primary-text highlight-accent text-underline"
           >
             Techlogix
@@ -71,7 +72,11 @@ const About = () => {
         <span>Amman Soomro</span>
         <span>@ammansoomro</span>
         <div className="full-width flex flex-justify-end mr-xxl">
-          <img src={images.sign_light} className="w-1-5" />
+          <img
+            src={images.sign_light}
+            className="w-1-5"
+            alt="Signature Image"
+          />
         </div>
       </div>
     </div>
