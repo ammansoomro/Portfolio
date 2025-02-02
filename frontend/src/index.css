@@ -3188,3 +3188,14 @@ a {
     font-size: 1.75rem;
   }
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--base-white-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  width: 6px;
+  border-radius: 20px;
+}

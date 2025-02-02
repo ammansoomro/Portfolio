@@ -41,14 +41,15 @@ const About = () => {
           applications that make an impact.
         </span>
         <span>
-          I graduated from FAST with a CGPA of{" "}
+          I graduated from FAST National University of Compter and Emerging
+          Sciences (NUCES) with a CGPA of{" "}
           <span className="color-primary-text highlight-accent">3.5</span> ,
           earning a place on the Dean's and Rector's List multiple times and
           securing{" "}
           <span className="color-primary-text highlight-accent">
             1st position
           </span>{" "}
-          in one of my semesters
+          in one of my semesters.
         </span>
         <span>
           Currently, I’m working at{" "}

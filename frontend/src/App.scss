@@ -17,16 +17,6 @@
   padding: 4rem;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-  background-color: var(--base-white-light);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
-  width: 6px;
-  border-radius: 20px;
-}
 
 @media screen and (max-width: 500px) {
   .app__wrapper {
