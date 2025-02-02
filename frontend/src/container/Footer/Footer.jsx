@@ -1,6 +1,6 @@
 import React from "react";
 
-import { images } from "../../constants";
+import images from "../../constants/images";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Footer.scss";
 

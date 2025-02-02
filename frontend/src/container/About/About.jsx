@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import { images } from "../../constants";
+import images from "../../constants/images";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
 
