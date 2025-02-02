@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import "react-tippy/dist/tippy.css";
 import { FaJava, FaReact, FaNode } from "react-icons/fa";
-import { DiMysql, DiHtml5, DiPhp, DiBootstrap, DiCss3 } from "react-icons/di";
+import { DiMysql } from "react-icons/di";
+import { TbCodeDots } from "react-icons/tb";
 import {
   SiNextdotjs,
-  SiFirebase,
   SiJavascript,
   SiMongodb,
   SiPython,
@@ -37,13 +37,9 @@ const Skills = () => {
     { icon: SiTailwindcss, name: "Tailwind" },
     { icon: SiMongodb, name: "MongoDB" },
     { icon: SiExpress, name: "Express" },
-    { icon: SiFirebase, name: "Firebase" },
+    { icon: TbCodeDots, name: "Clean Code" },
     { icon: FaJava, name: "Java" },
     { icon: DiMysql, name: "MySQL" },
-    { icon: DiHtml5, name: "HTML" },
-    { icon: DiPhp, name: "PHP" },
-    { icon: DiBootstrap, name: "Bootstrap" },
-    { icon: DiCss3, name: "CSS" },
     { icon: SiPython, name: "Python" },
     { icon: SiGit, name: "Git" },
     { icon: SiSanity, name: "Sanity" },
