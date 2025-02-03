@@ -40,8 +40,6 @@ const works = [
     description:
       "A web-based, Student Management System built using HTML, CSS, PHP, and JavaScript that would store all the data about the students and their courses on a PHP MySQL server.",
     imgUrl: images.shadowsensei,
-    projectLink:
-      "https://k191048localweb.000webhostapp.com/NinjaDBMS/index.php",
     tags: ["Php"],
     title: "Shadow Sensei",
   },
@@ -50,7 +48,6 @@ const works = [
     description:
       "A web-based, Blog Post Management System developed using Php, HTML, and JS including MySQL Database as a backend to store all the data. The consists of different dashboards based on user-role.",
     imgUrl: images.lavenderlogs,
-    projectLink: "http://darktestsite007.000webhostapp.com/",
     tags: ["Php"],
     title: "Lavender Logs",
   },
