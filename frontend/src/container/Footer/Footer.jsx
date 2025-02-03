@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div class="flex flex-col flex-align-center w-4-5 gap-base">
         <a
-          href="https://firebasestorage.googleapis.com/v0/b/fastcentralhub.appspot.com/o/Amman_Soomro_Resume.pdf?alt=media&token=0eb046e5-b81d-4f48-a743-7de1918e51d0"
+          href="https://drive.google.com/file/d/1EMX00yfqcMmjhTWRDmrCTNys_iOUeRxu/view?usp=sharing"
           download=""
         >
           <div class="app__footer-card border-radius-m flex flex-justify-start p-base flex-align-center gap-m bg-secondary-300">
